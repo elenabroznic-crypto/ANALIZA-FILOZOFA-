@@ -1,20 +1,19 @@
 # 🏛️ Philo-Graph: Računalna Vizualizacija i Analiza Povijesnih Filozofskih Utjecaja Korištenjem Velikih Jezičnih Modela
 
-**Autor:** ELena Broznić   
+**Autor:** Elena Broznić   
 **Ustanova:** Filozofski fakultet u Rijeci, Prijediplomski studij Kulturologija  
 **Datum:** 1. lipnja 2026.  
 
 ---
 
-## Sažetak (Abstract)
-
+## Sažetak 
 Ovaj rad predstavlja znanstveno-praktični pregled aplikacije **Philo-Graph**, inovativnog digitalnog alata osmišljenog za rješavanje problema vizualizacije netekstualne složenosti povijesti filozofije. Filozofska se misao tradicionalno promatra linearno, što često zanemaruje višesmjerne povratne sprege i rekonceptualizaciju ključnih ideja među različitim epohama. Philo-Graph koristi dvosmjeran pristup: (a) dinamičku, interaktivnu klijentsku vizualizaciju usmjerenog grafa (React/Vite) koja omogućuje prostorno grupiranje 19 kanonskih filozofa kroz četiri epohe (Antika, Srednji vijek/Renesansa, Moderno doba, Suvremeno doba), i (b) ugradnju Generativne Umjetne Inteligencije (model *Gemini 3.5 Flash*) kao semantičkog posrednika koji pruža duboke kontekstualne analize utjecaja i biografija u realnom vremenu na hrvatskom jeziku. Rezultati primjene pokazuju da vizualna i konceptualna sinteza unaprjeđuje kognitivno usvajanje povijesnih veza, skraćujući vrijeme potrebno za prepoznavanje intelektualnih genealogija. Rad opisuje tehničku arhitekturu sustava te daje smjernice za buduće nadogradnje u polju digitalne humanistike.
 
 **Ključne riječi:** *digitalna humanistika, mrežna analiza, povijest filozofije, veliki jezični modeli (LLM), Gemini API, Pyvis, React vizualizacija*
 
 ---
 
-## 1. Uvod (Introduction)
+## 1. Uvod 
 
 Proučavanje povijesti filozofije tradicionalno se oslanja na čitanje primarnih i sekundarnih tekstualnih izvora. Iako je ova metoda neophodna za duboko razumijevanje pojedinačnih misli, ona često zakazuje u pružanju integriranog, makroskopskog pregleda konceptualnog razvoja (Moretti, 2005). Filozofski koncepti poput "tabule rase", "supstancije" ili "dijalektike" ne nastaju u vakuumu. Oni su rezultat dijaloga, afirmacije ili radikalne oporbe prethodnicima. Primjerice, Kantov transcendentalni idealizam izravna je reakcija na Lockeov i Humeov empirizam, dok je Foucaultova genealogija moći metodološki neodvojiva od Nietzscheova razmatranja genealogije morala (Foucault, 1971; Nietzsche, 1887).
 
@@ -27,7 +26,7 @@ Unatoč važnosti ovih veza, studenti i istraživači rijetko imaju pristup alat
 
 ---
 
-## 2. Pregled literature (Literature Review)
+## 2. Pregled literature 
 
 ### 2.1. Mrežna analiza u povijesti ideja
 Mrežna analiza (Network Analysis) postala je standardni alat u digitalnoj humanistici (Bursi et al., 2021). Proučavanjem "mreža utjecaja" (influence networks) i "mreža pisama" (Republic of Letters), povjesničari su uspjeli razotkriti skrivene komunikacijske kanale i utjecajne mislioce koji nisu nužno bili u prvom planu kanonskih tekstova. Primjena teorije grafova na filozofiju omogućuje nam da mjerimo metriku centralnosti (centrality metrics) pojedinih čvorova. Sokrat i Kant u pravilu pokazuju najveći stupanj ulaznih/izlaznih veza (degree centrality), što potvrđuje njihovu ulogu kritičnih čvorišta u evoluciji misli (Jockers, 2013).
@@ -37,7 +36,7 @@ Najveći izazov tradicionalne mrežne vizualizacije jest "gubitak dubine". Grafi
 
 ---
 
-## 3. Metodologija (Methodology)
+## 3. Metodologija 
 
 ### 3.1. Uzorak i struktura podataka
 Za potrebe modeliranja odabran je kanonski skup od 19 filozofa klasificiranih u 4 epohe prema preporukama povijesno-filozofske literature:
@@ -64,7 +63,7 @@ interface Connection {
 }
 ```
 
-### 3.2. Arhitektura sustava (System Architecture)
+### 3.2. Arhitektura sustava 
 Aplikacija je strukturirana kao full-stack sustav koji se sastoji od klijentskog i poslužiteljskog dijela radi maksimalne sigurnosti API ključeva:
 
 1.  **Server (Express & TypeScript):**
@@ -83,12 +82,12 @@ Jedan od ključnih zahtjeva istraživača bio je mogućnost lokalnog pokretanja 
 
 ---
 
-## 4. Rezultati i Tehnička Implementacija (Results)
+## 4. Rezultati i Tehnička Implementacija (
 
-### 4.1. Sučelje i Vizualni Identitet (Elegant Dark)
+### 4.1. Sučelje i Vizualni Identitet
 Slijedeći estetske standarde suvremenog web dizajna, implementirana je tema **"Elegant Dark"** koja se odlikuje izrazito tamnim tonom pozadine (`#0c0d10`), suptilnom prugastom koordinatnom mrežom točaka te svjetlećim neonskim oznakama epohe. Ovakav pristup bitno smanjuje zamor očiju prilikom dugotrajnog proučavanja grafa (Eye-Strain Reduction) te pruža osjećaj modernog akademskog rada.
 
-### 4.2. Algoritam za iscjeljivanje usmjerenih veza (Curves & Marker Ends)
+### 4.2. Algoritam za iscjeljivanje usmjerenih veza 
 Usmjerene veze prikazuju se pomoću `path` elemenata koji dinamički računaju zakrivljenost (Bézierova krivulja). Formula za računanje putanje u "Epoch-Columns" rasporedu glasi:
 $$C(x) = S_x + \Delta x \cdot f$$
 Gdje je $S_x$ početna koordinata izlaznog filozofa, $\Delta x$ horizontalna udaljenost do ciljnog filozofa, a $f$ faktor zakrivljenosti (postavljen na `0.4` za elegantni luk).
@@ -103,7 +102,7 @@ Kao rezultat opisanog dizajna, aplikacija uspješno vizualizira mrežu filozofsk
 
 ---
 
-## 5. Rasprava (Discussion)
+## 5. Rasprava 
 
 ### 5.1. Prednosti i doprinosi u edukaciji
 Sustav Philo-Graph uspješno rješava dva klasična problema u obrazovnim aplikacijama za humanističke znanosti:
@@ -115,7 +114,7 @@ Najveći izazov predstavlja potencijalna "semantička halucinacija" LLM-a kod vr
 
 ---
 
-## 6. Zaključak i Daljnji Razvoj (Conclusion & Future Work)
+## 6. Zaključak i Daljnji Razvoj 
 
 Provedena implementacija aplikacije Philo-Graph dokazuje da kombinacija modernog web dizajna, interaktivne grafičke vizualizacije i inteligencije Gemini modela stvara moćan alat za istraživanje kompleksnih povijesnih utjecaja.
 
@@ -127,7 +126,7 @@ Za buduće inačice predlaže se:
 
 ---
 
-## Literatura (References)
+## Literatura 
 
 *   Bursi, G., Rossetti, G., & Spadi, J. (2021). *Social and Concept Network Analysis in the Digital Humanities*. Academic Press.
 *   Foucault, M. (1971). *Nietzsche, Genealogy, History*. In D. F. Bouchard (Ed.), *Language, Counter-Memory, Practice* (pp. 139-164). Cornell University Press.
