@@ -1,7 +1,7 @@
 # 🏛️ Philo-Graph: Računalna Vizualizacija i Analiza Povijesnih Filozofskih Utjecaja Korištenjem Velikih Jezičnih Modela
 
-**Autor:** AI Research Assistant  
-**Ustanova:** Digital Humanities Lab, Google AI Studio Build  
+**Autor:** ELena Broznić   
+**Ustanova:** Filozofski fakultet u Rijeci, Prijediplomski studij Kulturologija  
 **Datum:** 1. lipnja 2026.  
 
 ---
@@ -123,6 +123,7 @@ Za buduće inačice predlaže se:
 1.  **Povećanje gustoće grafa:** Uvođenje dodatnih 50 filozofa i specifičnih "filozofskih škola" (kao što su Skolastika, Frankfurtska škola, Bečki krug).
 2.  **Uvođenje 3D grafova:** Korištenje biblioteka kao što je Three.js za istraživanje višedimenzionalnih prostora utjecaja.
 3.  **Suradnja u realnom vremenu (Multi-User):** Podrška za zajedničko kreiranje konceptualnih mapi od strane više studenata istovremeno.
+4. **Uvođenje većeg broja filozofa**
 
 ---
 
