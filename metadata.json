@@ -1,0 +1,6 @@
+{
+  "name": "Philosophy Influences",
+  "description": "Istražite povijest filozofije kroz interaktivnu mrežu utjecaja između filozofa, filtrirajte po epohama i analizirajte njihove veze pomoću Gemini AI-ja te preuzmite Python kod.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
