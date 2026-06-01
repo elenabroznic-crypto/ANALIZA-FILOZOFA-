@@ -95,6 +95,12 @@ Gdje je $S_x$ početna koordinata izlaznog filozofa, $\Delta x$ horizontalna uda
 
 Strelica (Arrowhead Marker) je definisana u `<defs>` zaglavlju te se boja dinamički mijenja sukladno epohi polaznog filozofa. Na ovaj način korisnik može vizualno pratiti "tok ideja" od prošlosti prema sadašnjosti samo prateći linije iste boje.
 
+### 4.3. Grafički prikaz i vizualizacija sustava
+Kao rezultat opisanog dizajna, aplikacija uspješno vizualizira mrežu filozofskih utjecaja na interaktivnom platnu (vidi Sliku 1).
+
+![Slika 1. Prikaz Philo-Graph mreže filozofskih utjecaja prema epohama](../src/assets/images/philosophy_network_layout_1780316494439.png)
+*Slika 1. Prikaz Philo-Graph mreže filozofskih utjecaja prema epohama u standardnom "Columns" rasporedu.*
+
 ---
 
 ## 5. Rasprava (Discussion)
