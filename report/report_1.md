@@ -1,4 +1,4 @@
-# 🏛️ Philo-Graph: Računalna Vizualizacija i Analiza Povijesnih Filozofskih Utjecaja Korištenjem Velikih Jezičnih Modela
+# Philo-Graph: Računalna Vizualizacija i Analiza Povijesnih Filozofskih Utjecaja Korištenjem Velikih Jezičnih Modela
 
 **Autor:** Elena Broznić   
 **Ustanova:** Filozofski fakultet u Rijeci, Prijediplomski studij Kulturologija  
